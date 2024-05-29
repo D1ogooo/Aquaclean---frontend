@@ -1,4 +1,4 @@
-🌊 Wave
+🌊 Aquaclean
 
 📋 Sobre o projeto
 
