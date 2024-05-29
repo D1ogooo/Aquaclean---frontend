@@ -1,0 +1,35 @@
+.container {
+ width: 90%;
+ margin: 0 auto;
+ height: auto;
+}
+
+.pai {
+ display: flex;
+ .title {
+  color: #fff;
+  border: none;
+  border-radius: .5rem;
+  font-family: 'Heebo';
+  margin-top: 1rem;
+  margin-bottom: 2.9rem;
+ }
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  .circle {
+    .texto {
+
+    }
+  }
+}
+
+.right {
+
+}
+
+#image_right {
+ width: 20rem;
+}

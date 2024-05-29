@@ -1,6 +1,6 @@
 import fotoBaleia from '../../assets/6622.png'
+import NossoTrabalho from '../../components/NossoTrabalho'
 import QuemSomos from '../../components/QuemSomos'
-import { dataMembros } from '../../components/QuemSomos/data'
 import './style.scss'
 
 function Home() {
@@ -15,16 +15,17 @@ function Home() {
               utilizando tecnologias avançadas e métodos ecológicos. Com entusiasmo e compromisso, estamos prontos para contribuir para a melhoria da qualidade de vida das comunidades carentes,
               promovendo saúde e bem-estar através do nosso projeto.</p>
             <div className='buttons'>
-              <button id='button_faleconosco'>Fale conosco</button>
-              <button id='button_quemsomos'>Quem somos</button>
+             <a id='button_faleconosco'>Fale conosco</a>
+             <a id='button_quemsomos'>Quem somos</a>
             </div>
           </section>
           <section className='filho_conteudo_inicial'>
-            <img src={fotoBaleia} />
+           <img src={fotoBaleia} />
           </section>
         </div>
 
        <QuemSomos />
+       <NossoTrabalho/>
       </main>
     </>
   )
