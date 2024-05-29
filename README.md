@@ -1,11 +1,16 @@
-# React + Vite
+🌊 Aquaclean
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+📋 Sobre o projeto
 
-Currently, two official plugins are available:
+A ideia é criar um projeto que ajude no meio ambiente, nele utilizei um frontend consumindo uma api voltada para a área,
+esse projeto envolve a poluição dos oceanos e sua situação atual
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-"# Wave---frontend" 
-"# Wave---frontend" 
-"# Wave---frontend" 
+💻 Tecnologias Utilizadas:
+
+```
+- React
+- React-router-dom
+- Sass
+- Bootstrap
+```
+    

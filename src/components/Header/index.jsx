@@ -12,10 +12,11 @@ export const Header = () => {
        <p>AquaClean</p>
       </Link>
       <ul className='header-ul'>
-       <li><a href="#">Início</a></li>
-       <li><a href="#">Quem somos</a></li>
+      <Link to='/' className="recados">Início</Link>
+       <li><a href="#pai_quemsomos">Quem somos</a></li>
        <li><a href="#">Nosso trabalho</a></li>
        <li><a href="#">Fale conosco</a></li>
+       <Link to='/recados' className="recados">Recados</Link>
       </ul>
      </header>
     </div>

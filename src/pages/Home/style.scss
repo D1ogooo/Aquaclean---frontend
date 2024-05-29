@@ -3,10 +3,6 @@
   margin: 0 auto;
 }
 
-.title {
-  color: red;
-}
-
 body {
   background-image: url(/src/assets/uma-baleia-jubarte-saltando-sobre-o-mar-ai-generative.jpg);
   background-color: rgba(0, 0, 0, 0.6);
@@ -29,15 +25,14 @@ body {
   width: 50%;
 
   p {
-    text-align: start;
-    width: 80%;
+    text-align: center;
+    width: 90%;
     font-family: 'Heebo';
     color: #ffffff;
   }
 
   .buttons {
-    margin-left: 50px;
-    margin-top: .2rem;
+    margin-top: .75rem;
     display: flex;
     gap: .3rem;
   }
@@ -67,17 +62,18 @@ body {
   }
   
   #button_quemsomos:hover {
-     transition: 500ms all;
-     border: solid 2px rgb(12, 80, 206);
-     color: #fff;
-    }
+   transition: 500ms all;
+   border: solid 2px #0c50ce;
+   color: #fff;
+  }
 }
 
 .filho_conteudo_inicial {
   width: 50%;
 
   img {
-    width: 100%;
-    height: auto;
+   width: 100%;
+   height: auto;
   }
 }
+
