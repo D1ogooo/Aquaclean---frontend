@@ -2,10 +2,13 @@
  width: 90%;
  margin: 0 auto;
  height: auto;
+ display: flex;
+ gap: 5rem;
+ justify-content: space-between;
 }
 
 .pai {
- display: flex;
+  
  .title {
   color: #fff;
   border: none;
@@ -19,15 +22,49 @@
 .left {
   display: flex;
   flex-direction: column;
-  .circle {
-    .texto {
+  gap: 2rem;
+  .internal_left_one {
+    display: flex;
+    width: 55rem;
+    align-items: center;
+  }
 
+  .internal_left_second {
+    display: flex;
+    width: 55rem;
+    align-items: center;
+  }
+
+  section {
+   display: flex;
+   flex-wrap: wrap;
+   margin: 1rem;
+   .texto {
+     width: 31.25rem;
     }
+  }
+
+  .circle {
+    background: #189fda;
+    border-radius: 50%;
+    color: #fff;
+    font-family: 'Heebo';
+    padding: 30px;
+    font-size: 20px;
+    height: 50px;
+    width: 50px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
   }
 }
 
 .right {
-
+ height: auto;
+ img {
+  width: 100%;
+  height: auto;
+ }
 }
 
 #image_right {
