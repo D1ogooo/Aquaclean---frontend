@@ -1,32 +1,25 @@
 import RobotImage from '../../assets/imagem robo.png'
+import { dataNossoTrabalho } from './data'
 import './style.scss'
 
 function NossoTrabalho () {
  return (
   <>
    <div className="pai">
-    <h1 className='title'>AquaClean</h1>
-    <div className="container">
+    <h1 className='second_title'>AquaClean</h1>
+    <div className="SecondContainer">
      <div className="left"> {/* início do left content */}
-      <div className='internal_left_one'>
-      <section>
+      {dataNossoTrabalho.map((card) => (
+      <section key={card.id}>
        <div className='circle'>
-        <p>01</p>
+        <p>{card.level}</p>
        </div>
-       <p className='texto'>Um drone submarino capaz de pegar o lixo e armazenar 
-        para depois ser despejado de uma maneira correta</p>
+       <p className='texto'>{card.text}</p>
       </section>
-      <section>
-       <div className='circle'>
-        <p>01</p>
-       </div>
-       <p className='texto'>Um drone submarino capaz de pegar o lixo e armazenar 
-        para depois ser despejado de uma maneira correta</p>
-      </section>
-      </div>
+      ))}
      </div>  {/* fim do left content */}
      <div className="right">
-      {/* <img src={RobotImage} id='image_right'/> */}
+      <img src={RobotImage} id='image_right'/>
      </div>
     </div>
    </div>

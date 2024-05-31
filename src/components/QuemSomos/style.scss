@@ -2,8 +2,7 @@
   width: 90%;
   margin: 0 auto;
   display: flex;
-  flex-direction: column
-  ;
+  flex-direction: column;
 }
 
 #title {
@@ -12,7 +11,7 @@
   font-family: 'Heebo';
   font-weight: 600;
   padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-bottom: 5rem;
 }
 
 .pai {
@@ -47,6 +46,7 @@ section {
   align-items: center;
   position: relative;
   z-index: 1;
+  margin-top: -3.4375rem;
   .text_section {
     background-color: #fff;
     margin-top: .5rem;

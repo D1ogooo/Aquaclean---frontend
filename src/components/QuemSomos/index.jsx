@@ -10,10 +10,10 @@ function QuemSomos() {
           <div className='pai_sections'>
             <hr />
             {dataMembros.map((membro) => (
-              <section key={membro.id}>
-                <img src={membro.img} alt={membro.name}/>
-                <p className='text_section'>{membro.name}</p>
-              </section>
+             <section key={membro.id}>
+              <img src={membro.img} alt={membro.name}/>
+              <p className='text_section'>{membro.name}</p>
+             </section>
             ))}
           </div>
         </div>
