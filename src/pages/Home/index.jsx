@@ -1,6 +1,7 @@
 import fotoBaleia from '../../assets/6622.png'
 import NossoTrabalho from '../../components/NossoTrabalho'
 import QuemSomos from '../../components/QuemSomos'
+import FaleConosco from '../../components/FaleConosco'
 import './style.scss'
 
 function Home() {
@@ -26,6 +27,10 @@ function Home() {
 
        <QuemSomos />
        <NossoTrabalho/>
+       <FaleConosco/>
+       <footer>
+        <p>&copy; 2023 Fiap Programmers | Desenvolvido por Fiap</p>
+       </footer>
       </main>
     </>
   )
