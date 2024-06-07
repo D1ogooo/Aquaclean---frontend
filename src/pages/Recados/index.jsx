@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { api } from '../../services/api'; // Certifique-se de que a URL base está configurada aqui
+import { api } from '../../services/api';
 import './style.scss';
 
 function Recados() {
@@ -17,27 +17,26 @@ function Recados() {
     
     api.get(`message/show/${token}`)
       .then((response) => {
-        setMessages(response.data);
-        setShowModal(true);
+       setMessages(response.data);
+       setShowModal(true);
       })
-      .catch((error) => {
-      
-        alert('KEY invalida.');
+      .catch(() => {
+       alert('KEY invalida.');
       });
   }
 
   return (
     <>
-      <div className="container">
-        <div className='content'>
+      <div className="ThirdContainer">
+     
           <h1 className="title">Favor inserir seu Token</h1>
           <input
-            type="text"
-            placeholder="Declare seu token"
-            onChange={(e) => setToken(e.target.value)}
+           type="text"
+           placeholder="Declare seu token"
+           onChange={(e) => setToken(e.target.value)}
           />
           <button onClick={handleSubmit}>Enviar</button>
-        </div>
+       
       </div>
 
       {showModal && (

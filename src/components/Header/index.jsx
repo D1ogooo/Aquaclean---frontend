@@ -1,25 +1,16 @@
-import { GiBigWave } from "react-icons/gi";
-import './style.scss'
-import { Link } from "react-router-dom";
+import { useState, useEffect } from 'react'
+import { HeaderDesktop } from '../HeaderDesktop/index';
+import { HeaderMobille } from '../HeaderMobbile/index'
 
-export const Header = () => {
-  return (
-   <>
-    <div className='container'>
-     <header>
-      <Link to='/' className="logo">
-       <GiBigWave/>
-       <p>AquaClean</p>
-      </Link>
-      <ul className='header-ul'>
-      <Link to='/' className="recados">Início</Link>
-       <li><a href="#pai_quemsomos">Quem somos</a></li>
-       <li><a href="#">Nosso trabalho</a></li>
-       <li><a href="#">Fale conosco</a></li>
-       <Link to='/recados' className="recados">Recados</Link>
-      </ul>
-     </header>
-    </div>
-   </>
-  )
+export function Header () {
+  const [state, setState] = useState(window.innerWidth)
+
+  useEffect(() => {
+   const handleResize = () => {
+    setState(window.innerWidth)
+   }
+   window.addEventListener('resize', handleResize);
+  },[])
+
+  return ( <> { state > 1000 ? <HeaderDesktop /> : <HeaderMobille/> } </>)
 }

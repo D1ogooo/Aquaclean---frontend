@@ -18,6 +18,7 @@ function NossoTrabalho () {
       </section>
       ))}
      </div>  {/* fim do left content */}
+     
      <div className="right">
       <img src={RobotImage} id='image_right'/>
      </div>
